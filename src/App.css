@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hoverRotate .fa-arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.hoverRotate:hover .fa-arrow-right {
+  transform: rotate(0);
+}
+
+.creation-cont .move {
+  transition: transform 0.3s ease;
+}
+
+.creation-cont:hover .move {
+  transform: rotate(-8deg);
+}
