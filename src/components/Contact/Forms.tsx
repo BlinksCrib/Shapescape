@@ -1,9 +1,9 @@
 const Forms = () => {
   return (
     <section>
-      <div className="flex justify-center items-center w-full bg-[#041C3B] pb-12">
+      <div className="flex justify-center items-center w-full bg-[#041C3B] pb-12 rounded-b-[6rem]">
         <div className="flex justify-center items-start w-[80%] flex-col">
-          <div className="text-[#ffffff]  mt-[4rem] mb-[3rem] lg:w-[45%]">
+          <div className="text-[#ffffff]  mt-[4rem] mb-[4rem] lg:w-[45%]">
             <h1 className="font-bold text-6xl">Contact us</h1>
             <p className="mt-2 font-medium text-xl">
               If you need help or just want to contact us, fill out the form

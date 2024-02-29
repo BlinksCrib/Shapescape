@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section>
-        <div className="flex justify-center items-center w-full h-screen bg-[#041C3B] rounded-b-[6rem]">
+        <div className="flex justify-center items-center w-full h-screen bg-[#041C3B] rounded-b-[6rem] static top-0">
             <div className="flex justify-center items-center flex-col w-[80%] h-full text-[#ffffff]">
                 <aside className="flex lg:justify-between justify-center items-center lg:flex-row flex-col">
                     <h1 className="text-5xl font-bold w-[40%]">Using games as a way to educate and tell stories</h1>

@@ -4,11 +4,11 @@ import Info from "../components/Contact/Info"
 
 const Contact = () => {
   return (
-    <div>
+    <main>
         <Forms />
         <Info />
         <Faq />
-    </div>
+    </main>
   )
 }
 

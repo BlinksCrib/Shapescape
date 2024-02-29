@@ -46,30 +46,30 @@ const Faq = () => {
   return (
     <section>
       <div className="flex justify-center items-center w-full">
-        <div className="flex justify-center items-center w-[80%]">
+        <div className="flex justify-center items-start w-[80%] flex-col py-[8rem]">
             <div>
-                <h1>FAQ</h1>
+                <h1 className="font-extrabold text-3xl text-[#041C3B] mb-4">FAQ</h1>
             </div>
           <div className="">
             {items.map((item: FAQItem, index: number) => (
-              <div className="border-b border-[#D5E4F9] pb-6" key={index}>
+              <div className="border-b border-[#D5E4F9] py-6 ease-in-out duration-700" key={index}>
                 <div
-                  className="flex justify-between items-center cursor-pointer "
+                  className="flex justify-between items-start cursor-pointer"
                   onClick={() => handleClick(index)}
                 >
                   <h3
-                    className="font-bold text-2xl py-6"
+                    className="font-bold text-2xl pb-7"
                     onClick={() => handleClick(index)}
                   >
                     {item.title}
                   </h3>
-                  <div className="bg-[#D5E4F9] h-[30px] w-[30px] rounded-full flex justify-center items-center px-2">
+                  <div className="bg-[#D5E4F9] h-[30px] w-[30px] rounded-full flex justify-center items-center px-2 ease-in-out duration-700">
                     {openSections[index] ? "+" : "-"}
                   </div>
                 </div>
                 <div
-                  style={{ display: openSections[index] ? "none" : "flex" }}
-                  className="gap-2"
+                //   style={{ display: openSections[index] ? "none" : "flex" }}
+                  className={`${openSections[index]? "hidden ease-out duration-700" : "flex ease-in duration-700"} ease-in-out duration-700`}
                 >
                   <p>{item.content}</p>
                 </div>

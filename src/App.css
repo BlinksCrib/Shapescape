@@ -19,3 +19,7 @@
 .creation-cont:hover .move {
   transform: rotate(-8deg);
 }
+
+.workscape:nth-child(2){
+  border-bottom-right-radius: 40px;
+}
