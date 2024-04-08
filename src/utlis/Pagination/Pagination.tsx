@@ -42,6 +42,8 @@ const Pagination: React.FC<Data> = ({ dataPerPage, totalData, children }) => {
   const renderPageNumbers = () => {
     const numbers = [];
     const maxVisiblePages = 6; // Maximum visible page numbers excluding ellipses
+    console.log(maxVisiblePages);
+    
 
     // Function to determine if the current viewport is mobile
     const isMobileView = () => {

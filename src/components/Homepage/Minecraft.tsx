@@ -11,7 +11,7 @@ const Minecraft = () => {
             and create interactive{" "}
             <small className="bg-[#CFB7F5] px-4 rounded-full">art pieces</small> through Minecraft.
           </h1>
-          <Button write="Read more" />
+          <Button write="Read more" links="/" />
         </div>
       </div>
     </section>
