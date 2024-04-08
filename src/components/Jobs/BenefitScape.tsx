@@ -41,7 +41,7 @@ const BenefitScape = () => {
   return (
     <section>
       <div className="flex justify-center items-center w-full rounded-b-[8rem] bg-[#ffffff]">
-        <div className="flex jsutify-center items-start flex-col w-[80%] py-[6rem]">
+        <div className="flex jsutify-center items-start flex-col lg:w-[80%] w-[95%] py-[6rem]">
           <div className="mb-16">
             <h1 className="font-bold lg:text-6xl lg:3xl lg:w-[60%]">
               Benefits of working at Shapescape

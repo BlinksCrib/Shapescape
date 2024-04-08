@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.blog::-webkit-scrollbar {
+  width: 5px;
+}
+.blog::-webkit-scrollbar-track {
+  border: none;
+  background-color: var(--black-color);
+}
+.blog::-webkit-scrollbar-thumb {
+  background: #cf9414;
+  height: 1rem;
+}
+
 .hoverRotate .fa-arrow-right {
   transition: transform 0.3s ease;
 }
@@ -18,6 +30,26 @@
 
 .creation-cont:hover .move {
   transform: rotate(-8deg);
+}
+
+.teams .team-p {
+  transition: transform 0.3s ease;
+}
+
+.teams:hover .team-p {
+  transform: rotate(-3deg);
+}
+
+.home-blog img, .home-blog .cats{
+  transition: transform 0.3s ease;
+}
+
+.home-blog:hover .cats{
+  transform:  rotate(3deg);
+}
+
+.home-blog:hover img{
+    transform:  rotate(-2deg);
 }
 
 .workscape:nth-child(2){

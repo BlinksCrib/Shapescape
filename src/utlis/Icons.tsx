@@ -275,7 +275,13 @@ export function LogoColored() {
 
 export function TellDesk() {
   return (
-    <svg width="490" height="318" viewBox="0 0 490 318" fill="none" className="w-full">
+    <svg
+      width="490"
+      height="318"
+      viewBox="0 0 490 318"
+      fill="none"
+      className="w-full"
+    >
       <g clipPath="url(#clip43950435ijfdsmf)">
         <rect
           x="285"
@@ -312,7 +318,13 @@ export function TellDesk() {
 
 export function TellMobile() {
   return (
-    <svg width="626" height="243" viewBox="0 0 626 243" fill="none" className="w-full">
+    <svg
+      width="626"
+      height="243"
+      viewBox="0 0 626 243"
+      fill="none"
+      className="w-full"
+    >
       <g clipPath="url(#clip4950jdjsnfjnll)">
         <rect
           x="466"
@@ -364,7 +376,343 @@ export function TellMobile() {
 
 export function Applies() {
   return (
-    <svg width="421" height="406" viewBox="0 0 421 406" fill="none" className="w-full">
+    <svg
+      width="421"
+      height="406"
+      viewBox="0 0 421 406"
+      fill="none"
+      className="w-full"
+    >
+      <g clipPath="url(#clip34950459)">
+        <circle cx="47" cy="113.504" r="47" fill="white"></circle>
+        <path
+          d="M323.153 59.5903C332.182 62.1657 337.519 71.6401 333.733 80.2321C322.898 104.827 304.285 125.391 280.529 138.602C251.791 154.584 217.88 158.495 186.258 149.475C154.636 140.455 127.892 119.242 111.909 90.5037C98.6985 66.7482 93.7354 39.4589 97.506 12.8491C98.8233 3.55317 108.355 -1.67993 117.384 0.895481L220.269 30.2429L323.153 59.5903Z"
+          fill="#4B927E"
+        ></path>
+        <rect
+          x="335.188"
+          y="134.281"
+          width="262.982"
+          height="122.217"
+          rx="61.1085"
+          transform="rotate(66.4328 335.188 134.281)"
+          fill="white"
+        ></rect>
+        <rect
+          y="176.504"
+          width="229"
+          height="229"
+          rx="20"
+          fill="#EF38A9"
+        ></rect>
+      </g>
+      <defs>
+        <clipPath id="clip34950459">
+          <rect width="421" height="406" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function CrafDesk() {
+  return (
+    <svg
+      width="468"
+      height="370"
+      viewBox="0 0 468 370"
+      fill="none"
+      className="w-full"
+    >
+      <g clipPath="url(#clip0_1642_22005)">
+        <path
+          d="M231.728 227.202C222.584 225.871 213.973 232.221 213.868 241.461C213.555 268.99 222.304 296.052 239.027 318.377C259.121 345.202 289.081 362.99 322.317 367.83C355.553 372.669 389.342 364.162 416.251 344.181C438.645 327.552 454.748 304.109 462.298 277.633C464.832 268.747 458.39 260.205 449.246 258.874L340.487 243.038L231.728 227.202Z"
+          fill="#4B927E"
+        ></path>
+        <path
+          d="M2.96418 171.947C-5.50362 157.28 5.08113 138.947 22.0167 138.947L215.7 138.947C232.636 138.947 243.221 157.28 234.753 171.947L137.911 339.682C129.443 354.348 108.274 354.348 99.806 339.682L2.96418 171.947Z"
+          fill="#CFB7F5"
+        ></path>
+        <rect
+          x="48"
+          y="65.7109"
+          width="100"
+          height="100"
+          rx="14"
+          transform="rotate(-45 48 65.7109)"
+          fill="#4B927E"
+        ></rect>
+        <rect
+          x="262.125"
+          y="-6"
+          width="258.796"
+          height="129.698"
+          rx="18.4951"
+          transform="rotate(34.8569 262.125 -6)"
+          fill="#EF38A9"
+        ></rect>
+      </g>
+      <defs>
+        <clipPath id="clip0_1642_22005">
+          <rect width="468" height="370" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function CrafMobile() {
+  return (
+    <svg
+      width="630"
+      height="199"
+      viewBox="0 0 630 199"
+      fill="none"
+      className="w-full"
+    >
+      <rect x="19" y="8" width="66" height="187" rx="33" fill="#CFB7F5"></rect>
+      <rect
+        x="595.352"
+        y="12"
+        width="69.9197"
+        height="172.781"
+        rx="34.9599"
+        transform="rotate(76.998 595.352 12)"
+        fill="#4B927E"
+      ></rect>
+      <path
+        d="M229 195H120.908C107.74 195 100.21 179.982 108.086 169.429L216.178 24.6142C225.387 12.2771 245 18.7898 245 34.1847V179C245 187.837 237.837 195 229 195Z"
+        fill="#4B927E"
+      ></path>
+      <ellipse cx="131.5" cy="52" rx="33.5" ry="34" fill="#C6F052"></ellipse>
+      <path
+        d="M431.801 194.5C439.091 194.5 445.095 188.562 444.08 181.343C441.24 161.142 431.913 142.27 417.322 127.678C399.599 109.956 375.563 100 350.5 100C325.437 100 301.401 109.956 283.678 127.678C269.087 142.27 259.76 161.142 256.92 181.343C255.905 188.562 261.909 194.5 269.199 194.5L350.5 194.5L431.801 194.5Z"
+        fill="#CFB7F5"
+      ></path>
+      <path
+        d="M301.199 23C293.909 23 287.862 28.972 289.367 36.1043C291.861 47.9249 297.698 58.8714 306.306 67.5477C318.027 79.3625 333.924 86 350.5 86C367.076 86 382.973 79.3625 394.694 67.5477C403.302 58.8714 409.139 47.9249 411.633 36.1044C413.138 28.972 407.091 23 399.801 23L350.5 23L301.199 23Z"
+        fill="#EF38A9"
+      ></path>
+      <rect
+        x="567.773"
+        y="152.887"
+        width="64.8936"
+        height="64.8936"
+        rx="11.044"
+        transform="rotate(135 567.773 152.887)"
+        fill="#C6F052"
+      ></rect>
+    </svg>
+  );
+}
+
+export function Journ() {
+  return (
+    <svg
+      width="612"
+      height="337"
+      viewBox="0 0 612 337"
+      fill="none"
+      className="w-full"
+    >
+      <path
+        d="M312.183 204.135C321.252 206.565 326.723 215.936 323.283 224.672C310.916 256.08 288.234 282.573 258.714 299.616C224.262 319.507 183.319 324.897 144.892 314.601C106.465 304.304 73.7019 279.164 53.8107 244.712C36.7677 215.192 30.3702 180.908 35.3639 147.525C36.7529 138.239 46.1774 132.859 55.2463 135.289L183.714 169.712L312.183 204.135Z"
+        fill="#4B927E"
+      ></path>
+      <path
+        d="M293.827 151.34C286.083 146.032 284.04 135.374 290.189 128.279C312.298 102.772 342.5 85.3321 376.007 79.0771C415.114 71.7767 455.52 80.3106 488.334 102.801C521.149 125.292 543.686 159.897 550.986 199.004C557.241 232.511 551.872 266.971 536.059 296.793C531.661 305.088 520.984 307.028 513.239 301.72L403.533 226.53L293.827 151.34Z"
+        fill="#CFB7F5"
+      ></path>
+      <rect
+        x="126"
+        y="60.5518"
+        width="120"
+        height="120"
+        rx="30"
+        transform="rotate(-26.5043 126 60.5518)"
+        fill="white"
+      ></rect>
+    </svg>
+  );
+}
+
+export function GamicDesk() {
+  return (
+    <svg
+      width="493"
+      height="364"
+      viewBox="0 0 493 364"
+      fill="none"
+      className="w-full"
+    >
+      <path
+        d="M27.9615 217.976C18.7533 217.205 10.5461 224.068 11.0047 233.297C12.3712 260.795 22.7545 287.272 40.8079 308.536C62.5003 334.085 93.4897 350.013 126.959 352.816C160.428 355.62 193.635 345.068 219.275 323.483C240.614 305.519 255.257 281.137 261.178 254.25C263.166 245.226 256.215 237.093 247.006 236.322L137.484 227.149L27.9615 217.976Z"
+        fill="#4B927E"
+      ></path>
+      <rect
+        x="272.002"
+        y="139.999"
+        width="220"
+        height="220"
+        rx="24"
+        fill="#EF38A9"
+      ></rect>
+      <rect
+        x="72"
+        y="129"
+        width="120"
+        height="120"
+        rx="24"
+        transform="rotate(-30 72 129)"
+        fill="#CFB7F5"
+      ></rect>
+      <rect
+        x="403.814"
+        y="70.9688"
+        width="72"
+        height="234"
+        rx="36"
+        transform="rotate(107.655 403.814 70.9688)"
+        fill="#4B927E"
+      ></rect>
+    </svg>
+  );
+}
+
+export function GamicMobile() {
+  return (
+    <svg
+      width="630"
+      height="197"
+      viewBox="0 0 630 197"
+      fill="none"
+      className="llg:w-full"
+    >
+      <rect
+        x="180.24"
+        y="47.8418"
+        width="138"
+        height="139"
+        rx="20"
+        fill="#CFB7F5"
+      ></rect>
+      <path
+        d="M13.4915 147.907C5.68106 155.717 5.60056 168.59 14.8311 174.657C30.7097 185.093 49.4115 190.774 68.6991 190.774C94.7103 190.774 119.656 180.442 138.049 162.049C156.441 143.656 166.774 118.71 166.774 92.6992C166.774 73.4116 161.093 54.7098 150.657 38.8312C144.59 29.6007 131.717 29.6812 123.907 37.4917L68.6991 92.6992L13.4915 147.907Z"
+        fill="#C6F052"
+      ></path>
+      <rect
+        x="447.73"
+        y="171.365"
+        width="71.4511"
+        height="183.897"
+        rx="35.7256"
+        transform="rotate(159.07 447.73 171.365)"
+        fill="#4B927E"
+      ></rect>
+      <path
+        d="M613.301 89.1016C622.69 89.1016 630.452 96.7696 628.823 106.016C625.374 125.594 615.991 143.797 601.744 158.044C583.459 176.329 558.659 186.602 532.801 186.602C506.942 186.602 482.143 176.329 463.858 158.044C449.61 143.797 440.227 125.594 436.779 106.016C435.15 96.7696 442.912 89.1016 452.301 89.1016L532.801 89.1016L613.301 89.1016Z"
+        fill="#CFB7F5"
+      ></path>
+      <circle cx="532.801" cy="43.1016" r="37.5" fill="#EF38A9"></circle>
+    </svg>
+  );
+}
+
+export function Rob() {
+  return (
+    <svg
+      className="w-full"
+      width="585"
+      height="476"
+      viewBox="0 0 585 476"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      overflow="visible"
+    >
+      <path
+        id="edu-info-green-ellipse-group-1"
+        d="M36.9123 269.056C27.1107 270.461 20.1866 279.598 22.8803 289.126C30.9061 317.515 48.1036 342.675 72.0601 360.548C100.846 382.025 137.031 391.223 172.657 386.119C208.283 381.014 240.43 362.026 262.028 333.331C280.002 309.45 289.443 280.473 289.175 250.973C289.085 241.072 279.874 234.246 270.072 235.651L153.492 252.353L36.9123 269.056Z"
+        fill="#4B927E"
+      ></path>
+      <circle
+        cx="103.09"
+        cy="193.223"
+        r="50.4243"
+        fill="#CDF462"
+        id="edu-info-light-green-circle-group-1"
+      ></circle>
+      <rect
+        id="edu-info-white-rect-group-1"
+        x="158"
+        width="258.796"
+        height="129.698"
+        rx="18.4951"
+        transform="rotate(30 157.809 0)"
+        fill="white"
+      ></rect>
+      <path
+        id="edu-info-violet-triangle-group-1"
+        d="M393.111 152.007C400.012 140.055 417.264 140.055 424.165 152.007L544.982 361.268C551.882 373.221 543.257 388.161 529.455 388.161H287.821C274.02 388.161 265.394 373.221 272.295 361.268L393.111 152.007Z"
+        fill="#CFB7F5"
+      ></path>
+    </svg>
+  );
+}
+
+export function Rob1() {
+  return (
+    <svg
+      width="521"
+      height="396"
+      viewBox="0 0 521 396"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      overflow="visible"
+      className="w-full"
+    >
+      <rect
+        x="300.002"
+        y="160.003"
+        width="220"
+        height="220"
+        rx="24"
+        fill="#EF38A9"
+        id="edu-info-pink-rectangle-group-2"
+        // style="transform-origin: center center;"
+      ></rect>
+      <rect
+        x="352"
+        y="33"
+        width="110"
+        height="110"
+        rx="24"
+        transform="rotate(-18 352 33)"
+        fill="#4B927E"
+        id="edu-info-green-rectangle-group-2"
+      ></rect>
+      <rect
+        x="-30"
+        y="-50"
+        width="80"
+        height="271"
+        rx="40"
+        fill="white"
+        transform="rotate(64 80 271)"
+        id="edu-info-white-rectangle-group-2"
+      ></rect>
+      <path
+        id="edu-info-light-green-ellipse-group-2"
+        d="M34.409 226.761C25.3412 225.442 16.9082 231.748 16.8109 240.925C16.4951 270.721 25.8877 300.036 43.763 324.124C64.9444 352.668 96.3014 371.535 130.936 376.576C165.57 381.616 200.645 372.416 228.444 351.001C251.904 332.928 268.561 307.404 276.002 278.644C278.293 269.787 271.818 261.311 262.75 259.991L148.58 243.376L34.409 226.761Z"
+        fill="#CDF462"
+        // style="transform-origin: center bottom;"
+      ></path>
+    </svg>
+  );
+}
+
+export function Proj() {
+  return (
+    <svg width="421" height="406" viewBox="0 0 421 406" fill="none">
       <g clipPath="url(#clip34950459)">
         <circle cx="47" cy="113.504" r="47" fill="white"></circle>
         <path

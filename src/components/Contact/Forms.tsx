@@ -1,8 +1,8 @@
 const Forms = () => {
   return (
     <section>
-      <div className="flex justify-center items-center w-full bg-[#041C3B] pb-12 rounded-b-[6rem]">
-        <div className="flex justify-center items-start w-[80%] flex-col">
+      <div className="flex justify-center items-center w-full bg-[#041C3B] pb-12 lg:rounded-b-[6rem] rounded-b-[2rem]">
+        <div className="flex justify-center items-start lg:w-[80%] w-[95%] flex-col">
           <div className="text-[#ffffff]  mt-[4rem] mb-[4rem] lg:w-[45%]">
             <h1 className="font-bold text-6xl">Contact us</h1>
             <p className="mt-2 font-medium text-xl">

@@ -27,42 +27,22 @@ const Navbar: React.FC = () => {
   // Set navbar color based on the current location
   switch (location.pathname) {
     case "/":
-      navbarColor = "bg-[#041C3B]";
-      textColor = "text-[#ffffff]";
-      navImg = <Logo />;
-      break;
-    case "/education":
-      navbarColor = "bg-[#F3F6FA]";
-      textColor = "text-[#041c3b]";
-      navImg = <LogoColored />;
-      break;
-    case "/about":
-      navbarColor = "bg-[#F3F6FA]";
-      textColor = "text-[#041c3b]";
-      navImg = <LogoColored />;
-      break;
-    case "/catalog":
-      navbarColor = "bg-[#F3F6FA]";
-      textColor = "text-[#041c3b]";
-      navImg = <LogoColored />;
-      break;
     case "/blog":
-      navbarColor = "bg-[#041C3B]";
-      textColor = "text-[#ffffff]";
-      navImg = <Logo />;
-      break;
-    case "/jobs":
-      navbarColor = "bg-[#F3F6FA]";
-      textColor = "text-[#041c3b]";
-      navImg = <LogoColored />;
-      break;
     case "/contact":
       navbarColor = "bg-[#041C3B]";
       textColor = "text-[#ffffff]";
       navImg = <Logo />;
       break;
+    case "/education":
+    case "/about":
+    case "/catalog":
+    case "/jobs":
+      navbarColor = "bg-[#F3F6FA]";
+      textColor = "text-[#041c3b]";
+      navImg = <LogoColored />;
+      break;
     default:
-      navbarColor = "#041C3B";
+      navbarColor = "bg-[#041C3B]";
       textColor = "text-[#ffffff]";
       navImg = <Logo />;
     // Default color
@@ -89,29 +69,29 @@ const Navbar: React.FC = () => {
     <header
       className={`${
         nav
-          ? `${navbarColor} ${textColor} h-[70px] py-[10.5px] w-full z-[10] flex justify-center`
-          : `${navbarColor} ${textColor} h-[70px] py-[10.5px] w-full z-[10] flex justify-center items-center`
+          ? `${navbarColor} ${textColor} h-[80px] py-[10.5px] w-full z-[10] flex justify-center flex-col items-center fixed overflow-hidden`
+          : `${navbarColor} ${textColor} h-[80px] py-[10.5px] w-full z-[10] flex justify-center items-center`
       }`}
     >
-      <nav className="flex justify-between h-full w-[80%] items-center">
-          <Link to="/" className="md:mr-6">
-            {navImg}
-          </Link>
-          <div>
-            <aside className="lg:block hidden">
-              <Links />
+      <nav className="flex justify-between h-full lg:w-[80%] w-[95%] items-center">
+        <Link to="/" className="md:mr-6">
+          {navImg}
+        </Link>
+        <div>
+          <aside className="lg:block hidden">
+            <Links />
 
-              {/* <DarkModeSwitch /> */}
-            </aside>
-          </div>
+            {/* <DarkModeSwitch /> */}
+          </aside>
+        </div>
 
-          <button className="lg:hidden cursor-pointer ml-4" onClick={handClick}>
-            {nav ? (
-              <i className="fa-solid fa-x"></i>
-            ) : (
-              <i className="fa-solid fa-bars"></i>
-            )}
-          </button>
+        <button className="lg:hidden cursor-pointer ml-4" onClick={handClick}>
+          {nav ? (
+            <i className="fa-solid fa-x"></i>
+          ) : (
+            <i className="fa-solid fa-bars"></i>
+          )}
+        </button>
       </nav>
 
       {/* mobile view */}
@@ -119,7 +99,7 @@ const Navbar: React.FC = () => {
       <div
         className={
           nav
-            ? `lg:hidden left-0 ${navbarColor} ${textColor} mt-[4rem]  w-full h-full ease-in duration-500`
+            ? `fixed lg:hidden left-0 ${navbarColor} ${textColor} mt-[4rem]  w-full h-screen ease-in duration-500 top-0 overflow-hidden`
             : "fixed h-screen left-[-100%] mt-[4rem]  ease-out duration-700"
         }
       >

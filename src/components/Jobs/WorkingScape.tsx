@@ -7,9 +7,9 @@ const WorkingScape = () => {
   return (
     <section>
       <div className="flex justify-center items-center w-full">
-        <div className="flex justify-between items-center w-[80%] py-[4rem]">
-          <aside className="lg:w-[35%]">
-            <h1 className="font-extrabold text-5xl">Working at Shapescape</h1>
+        <div className="flex justify-between items-center lg:flex-row flex-col lg:w-[80%] w-[95%] py-[4rem]">
+          <aside className="lg:w-[35%] llg:text-center">
+            <h1 className="font-extrabold lg:text-5xl text-3xl">Working at Shapescape</h1>
             <h4 className="font-semibold text-base mt-3">
               Shapescape is a game development company that uses the game
               Minecraft as an engine to create educational and entertaining
@@ -27,12 +27,22 @@ const WorkingScape = () => {
               journey, have a look at the jobs below!
             </p>
           </aside>
-          <aside className="flex justify-center items-center lg:w-[60%] flex-wrap flex-row gap-4 workscape">
+          <aside className="lg:flex hidden justify-center items-center lg:w-[60%] flex-wrap flex-row gap-4 workscape">
             {[workone, worktwo, workthree, workfour]?.map((item, i) => (
-              <div key={i} className="h-[240px] w-[48%] object-cover object-center">
-                <img src={item} alt="" className="w-full h-full" />
+              <div
+                key={i}
+                className="h-[240px] w-[48%] object-cover object-center"
+              >
+                <img src={item} alt={item} className="w-full h-full" />
               </div>
             ))}
+          </aside>
+          <aside className="lg:hidden flex justify-center items-center mt-12">
+            <img
+              src={workfour}
+              alt="a man drawing"
+              className="w-full h-full rounded-2xl"
+            />
           </aside>
         </div>
       </div>

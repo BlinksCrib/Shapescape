@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 interface LinksProps {
   handClose?: any;
@@ -13,25 +13,63 @@ const Links: React.FC<LinksProps> = ({ handClose }) => {
     { name: "Jobs" },
     { name: "Contact" },
   ];
+  const location = useLocation();
+
+  let activeColor = "";
+  let activeBg = "";
+
+  // Set navbar color based on the current location
+  switch (location.pathname) {
+    case "/":
+    case "/blog":
+    case "/contact":
+      activeColor = "lg:text-[#cdf462]";
+      activeBg = "bg-[#cdf462]";
+      break;
+    case "/education":
+    case "/about":
+    case "/catalog":
+    case "/jobs":
+      activeColor = "lg:text-[#4b927e]";
+      activeBg = "bg-[#4b927e]";
+      break;
+    default:
+      activeColor = "lg:text-[#041C3B]";
+      activeBg = "bg-[#4b927e]";
+    // Default color
+  }
 
   return (
     <section>
       <div>
-        <ul className="flex justify-center items-center lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-8 overflow-x-hidden">
+        <ul className="flex justify-center items-center lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-8 ">
+          <li
+            className="lg:hidden cursor-pointer flex justify-center items-center hover:text-[rgb(123,104,238)] font-semibold ease-out duration-700"
+            onClick={handClose}
+          >
+            <Link to="/" className="">
+              Home
+            </Link>
+          </li>
           {link?.map((item, i) => (
             <li
-              className="cursor-pointer flex justify-center items-center hover:text-[rgb(123,104,238)] active:text-[rgb(123,104,238)] focus:text-[rgb(123,104,238)] focus:underline focus:underline-offset-2 focus:decoration-2 font-semibold ease-out duration-700"
+              className={`cursor-pointer flex justify-center items-center flex-col hover:${activeColor}  font-semibold ease-out duration-700`}
               key={i}
               onClick={handClose}
             >
-              <Link to={`/${item.name.toLowerCase()}`} className="">
+              <NavLink
+                to={`/${item.name.toLowerCase()}`}
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? `${activeColor}` : `hover:${activeColor}`
+                }
+              >
                 {item.name}
-              </Link>{" "}
-              {/* <i
-                className={`fa-solid fa-chevron-down ml-2 ${
-                  !(i === 3 || i === 4) ? "block" : "hidden"
-                }`}
-              ></i> */}
+              </NavLink>
+              {location.pathname === `/${item.name.toLowerCase()}` && (
+                <div
+                  className={`rotate-45 w-[5px] h-[5px] ${activeBg} mt-1`}
+                ></div>
+              )}
             </li>
           ))}
         </ul>

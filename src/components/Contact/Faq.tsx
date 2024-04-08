@@ -46,30 +46,44 @@ const Faq = () => {
   return (
     <section>
       <div className="flex justify-center items-center w-full">
-        <div className="flex justify-center items-start w-[80%] flex-col py-[8rem]">
-            <div>
-                <h1 className="font-extrabold text-3xl text-[#041C3B] mb-4">FAQ</h1>
-            </div>
+        <div className="flex justify-center items-start lg:w-[80%] w-[95%] flex-col py-[8rem]">
+          <div>
+            <h1 className="font-extrabold text-3xl text-[#041C3B] mb-4">FAQ</h1>
+          </div>
           <div className="">
             {items.map((item: FAQItem, index: number) => (
-              <div className="border-b border-[#D5E4F9] py-6 ease-in-out duration-700" key={index}>
+              <div
+                className="border-b border-[#D5E4F9] py-6 ease-in-out duration-700"
+                key={index}
+              >
                 <div
                   className="flex justify-between items-start cursor-pointer"
                   onClick={() => handleClick(index)}
                 >
                   <h3
-                    className="font-bold text-2xl pb-7"
+                    className="font-bold text-2xl pb-7 w-[80%]"
                     onClick={() => handleClick(index)}
                   >
                     {item.title}
                   </h3>
-                  <div className="bg-[#D5E4F9] h-[30px] w-[30px] rounded-full flex justify-center items-center px-2 ease-in-out duration-700">
-                    {openSections[index] ? "+" : "-"}
+                  <div className="bg-[#D5E4F9] h-[30px] w-[30px] rounded-full flex justify-center items-center ease-in-out duration-700 text-center">
+                    <span className="h-full w-full text-center">
+                      {openSections[index] ? (
+                        <i className="fa-solid fa-plus h-full w-full m-0 p-0 text-center"></i>
+                      ) : (
+                        <i className="fa-solid fa-minus h-full w-full m-0 p-0 text-center"></i>
+                      )}
+                    </span>
+                    {/* {openSections[index] ? "+" : "-"} */}
                   </div>
                 </div>
                 <div
-                //   style={{ display: openSections[index] ? "none" : "flex" }}
-                  className={`${openSections[index]? "hidden ease-out duration-700" : "flex ease-in duration-700"} ease-in-out duration-700`}
+                  //   style={{ display: openSections[index] ? "none" : "flex" }}
+                  className={`${
+                    openSections[index]
+                      ? "hidden ease-out duration-700"
+                      : "flex ease-in duration-700"
+                  } ease-in-out duration-700`}
                 >
                   <p>{item.content}</p>
                 </div>

@@ -3,8 +3,8 @@ import { ContactDesk, ContactMobile } from "../../utlis/Icons";
 const Info = () => {
   return (
     <section>
-      <div className="flex justify-center items-center w-full bg-[#041C3B] rounded-b-[6rem]">
-        <div className="flex justify-center items-start flex-col w-[80%] h-full text-[#ffffff]">
+      <div className="flex justify-center items-center w-full bg-[#041C3B] lg:rounded-b-[6rem] rounded-b-[2rem]">
+        <div className="flex justify-center items-start flex-col lg:w-[80%] w-[95%] h-full text-[#ffffff]">
           <h1 className="font-bold text-2xl mt-[3rem]">
             <a href="mailto:contact@shapescape.com">contact@shapescape.com</a>
           </h1>

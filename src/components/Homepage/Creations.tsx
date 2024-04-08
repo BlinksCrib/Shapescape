@@ -51,18 +51,22 @@ const Creations = () => {
       took: "",
     },
   ];
+  
   return (
     <section>
       <div className="flex justify-center items-center w-full">
-        <div className="flex justify-center items-center flex-col w-[80%] py-[8rem]">
-          <main className="grid grid-cols-2 gap-8 justify-center items-center w-full  mb-[4rem]">
+        <div className="flex justify-center items-center flex-col lg:w-[80%] w-[95%] py-[8rem]">
+          <div className="text-center mb-[4rem] lg:w-[60%]">
+            <h1 className="font-extrabold lg:text-5xl">We are proud of our creations</h1>
+          </div>
+          <main className="grid lg:grid-cols-2 grid-cols-1 gap-8 justify-center items-center w-full  mb-[4rem]">
             {creation?.map((item, i) => (
               <main key={i} className="creation-cont">
                 <Create item={item} />
               </main>
             ))}
           </main>
-          <Button write="See more Projects" />
+          <Button write="See more Projects" links="/catalog" />
         </div>
       </div>
     </section>

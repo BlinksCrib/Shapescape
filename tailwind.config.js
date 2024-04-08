@@ -16,6 +16,8 @@ export default {
       },
       screens: {
         fd: [{ max: '320px' }],
+        lmd: [{ max: '768px' }],
+        llg: [{ max: '992px' }],
         sm: '576px',
         md: '768px',
         lg: '992px',

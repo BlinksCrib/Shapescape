@@ -5,7 +5,7 @@ const Apply = () => {
   return (
     <section>
       <div className="flex justify-center items-center w-full bg-[#cfb7f5]">
-        <div className="flex lg:justify-between justify-center lg:flex-row flex-col items-center w-[80%] py-[8rem]">
+        <div className="flex lg:justify-between justify-center lg:flex-row flex-col items-center lg:w-[80%] w-[95%] py-[8rem]">
           <div className="lg:w-[55%]">
             <h1 className="font-extrabold text-5xl text-[#041C3B]">Didn’t find what you were looking for?</h1>
             <p className="py-8">
